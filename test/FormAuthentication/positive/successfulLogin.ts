@@ -13,6 +13,8 @@ describe('Login page', () => {
 
         await expect(browser).toHaveUrl('/secure', { containing: true });
         await expect(loginPage.flashMessage).toHaveText(
-            expect.stringContaining('You logged into a secure area!'));
+        expect.stringContaining('You logged into a secure area!'));
+
     });
+    
 });
